@@ -6,7 +6,6 @@ let botonEncendido = document.querySelectorAll("i.bi.bi-circle-fill");
 let colorDocumento = document.querySelector("link.tema");
 let hojaEstilo = colorDocumento.getAttribute('href');
 
-
 let botonRedInactivo = document.querySelector(".colorRed i.bi.bi-circle");
 let botonRedActivo = document.querySelector(".colorRed i.bi.bi-circle-fill");
 
@@ -27,13 +26,12 @@ function colorRed() {
 	colorDocumento.setAttribute('href','styleRed.css');
 	botonRedInactivo.style.display = "none";
 	botonRedActivo.style.display = "block";
-
+	break;
 	default: //se cambio case por default
 	colorDocumento.setAttribute('href', 'style.css');
 	botonRedInactivo.style.display = "block";
 	botonRedActivo.style.display = "none";
 	}
-
 	botonBlueInactivo.style.display = "block";
 	botonBlueActivo.style.display = "none";
 	botonYellowInactivo.style.display = "block";
@@ -60,6 +58,7 @@ function colorBlue() {
 	colorDocumento.setAttribute('href','styleBlue.css');
 	botonBlueInactivo.style.display = "none";
 	botonBlueActivo.style.display = "block";
+	break;
 	default:
 	colorDocumento.setAttribute('href', 'style.css');
 	botonBlueInactivo.style.display = "block";
@@ -91,6 +90,7 @@ function colorYellow() {
 	colorDocumento.setAttribute('href','styleYellow.css');
 	botonYellowInactivo.style.display = "none";
 	botonYellowActivo.style.display = "block";
+	break;
 	default:
 	colorDocumento.setAttribute('href', 'style.css');
 	botonYellowInactivo.style.display = "block";
@@ -101,6 +101,5 @@ function colorYellow() {
 	botonBlueInactivo.style.display = "block";
 	botonBlueActivo.style.display = "none";
 }
-
 document.queryselector(".colorYellow").addeventlistener('click', colorYellow);
 
